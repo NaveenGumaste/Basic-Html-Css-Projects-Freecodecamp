@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Food Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Survey Form</h1>
+      <p id="description" class="description text-center">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <header>
+          <form id="survey-form">
+              <div class="form-group">
+                  <label id="name-label" for="name">Name</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Enter you name" required>
+              </div>
+              <div class="form-group">
+                  <label id="email-label" for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Enter you email" required>
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number">Age
+                  <span class="clue">(optional)</span>
+                </label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"
+                />
+              </div>
+              <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Select current role</option>
+                  <option value="student">Chai Person</option>
+                  <option value="job">Coffee Person</option>
+                  <option value="learner">Morning Person</option>
+                  <option value="preferNo">Prefer not to say</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>Would you recommend FastFood to a friend?</p>
+                <label>
+                  <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitely
+                </label >
+                <label>
+                  <input name="user-recommend" value="maybe" type="radio" class="input-radio" checked/>maybe
+                </label >
+                <label>
+                  <input name="user-recommend" value="not Sure" type="radio" class="input-radio" checked/>not Sure
+                </label >
+              </div>
+              <div class="form-group">
+                <p>
+                  What is your favorite feature of FastFood?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                  <option disabled selected value>Select an option</option>
+                  <option value="Options">Options</option>
+                  <option value="UserInterface">UserInterface</option>
+                  <option value="blog">blog</option>
+                  <option value="Ease Of Use">Ease Of Use</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <p>
+                  What would you like to see improved?
+                  <span class="clue">(Check all that apply)</span>
+                </p>
+                <label><input name="prefer" value="Web Service" type="checkbox" class="input-checkbox"/>Web Service</label
+                >
+                <label>
+                  <input
+                    name="prefer"  value="Visual Feed" type="checkbox" class="input-checkbox"/>Visual Feed</label>
+                <label><input
+                    name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>More customizable</label>
+              </div>
+              <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..." ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button"> Submit </button>
+              </div>
+          </form>
+      </header>
+    </div>
+  </body>
+</html>

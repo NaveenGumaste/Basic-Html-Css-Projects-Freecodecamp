@@ -1,0 +1,1 @@
+const projectName = 'javascript-Documentation';
